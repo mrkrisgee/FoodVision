@@ -67,11 +67,43 @@ A few stat graphs visualized in TensorBoard:
 
 The results of FoodVision can be examined in the [`results`](https://github.com/mrkrisgee/FoodVision/tree/main/results) directory.
 
-### Usage
+## Usage
 
+To train your own FoodVision model and make predictions, you can utilize the [FoodVision](https://github.com/mrkrisgee/FoodVision/blob/main/Foodvision.ipynb) notebook available in the repository. This notebook provides step-by-step guidance on training the model, evaluating its performance, and making predictions on new food images.
 
+Follow these steps to get started:
+
+1. **Download the FoodVision Notebook**: Download the FoodVision notebook from the provided link in the repository.
+
+2. **Open the Notebook**: Open the downloaded notebook using Jupyter Notebook or any compatible platform.
+
+3. **Follow the Instructions**: Follow the instructions provided in the notebook to train the FoodVision model using the EfficientNet-B2 architecture and evaluate its performance.
+
+4. **Make Predictions**: Use the trained model to make predictions on new food images by following the prediction section in the notebook.
+
+By following the instructions outlined in the FoodVision notebook, you can train your own food classification model and leverage it to make predictions on various food images. This enables you to explore the capabilities of the model and adapt it to suit your specific use cases.
 
 ## Future work
 
+Upon closer examination of the results, along with the plotting and analysis of the confusion matrix, it becomes evident that there is significant room for further improvement in the model's performance. This presents an exciting avenue for future work and exploration.
+
+Potential areas for improvement and future research include:
+
+- **Model Fine-Tuning**: Fine-tune the model architecture and hyperparameters to enhance its performance on specific food categories and improve overall accuracy.
+
+- **Data Augmentation**: Explore advanced data augmentation techniques to increase the diversity and quantity of training data, thereby improving the model's ability to generalize to unseen data.
+
+- **Ensemble Learning**: Investigate ensemble learning techniques by combining multiple models to leverage their collective strengths and improve classification accuracy.
+
+- **Transfer Learning**: Experiment with transfer learning approaches by leveraging pre-trained models and adapting them to the food classification task to expedite training and improve performance.
+
+- **Hyperparameter Optimization**: Conduct thorough hyperparameter optimization to identify optimal settings for model training, leading to improved performance and faster convergence.
+
+By addressing these areas and implementing targeted strategies, the FoodVision model can be significantly enhanced, paving the way for more accurate and reliable food classification in diverse real-world scenarios.
+
 ## References
 
+- [The CNN Explainer](https://www.cnnexplainer.com)
+- [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
+- [Food101 Dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)
+- [mrdbourke](https://github.com/mrdbourke/pytorch-deep-learning)
