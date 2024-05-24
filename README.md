@@ -41,15 +41,35 @@ Based on the findings from the FoodVisionMini experiment, the **[EfficientNet-B2
 ### Evaluation
 
 1. **Evaluate model:**
+
+The models were evaluated based on accuracy and loss metrics. These metrics provide insights into the performance of the models during training and testing phases. In addition to further assess the performance of the trained model, the following steps are undertaken:   
    - Load the trained model: Retrieve the saved weights and architecture of the trained EfficientNet-B2 model.
    - Instantiate a new model: Re-create the model architecture and load the trained weights to ensure consistency.
    - Make predictions with the new model: Utilize the re-instantiated model to predict food categories for a set of images.
    - Plot random images from original dataset: Randomly select images from the original Food101 dataset and visualize them.
    - Evaluate prediction accuracy: Compare the model's predictions with the ground truth labels to determine the accuracy of its classifications.
-   - Plot custom images obtained online: Acquire custom food images from online sources and feed them into the model for prediction.
-   - Evaluate model's capability on unseed data: Assess the model's ability to correctly classify food items from custom images, including those it has not encountered during training.
+   - Plot custom images obtained online: Acquire custom food images from online sources and feed them into the model for prediction. This allows for testing the model's performance on real-world, unseen data.
+   - Evaluate model's capability on unseed data: Assess the model's ability to correctly classify food items from custom images, including those it has not encountered during training. This step evaluates the model's generalization ability.
+   - Create a confusion matrix: Construct a confusion matrix to compare target and predicted labels. This matrix provides a visual representation of the model's performance across different classes, highlighting which classes the model struggles to classify accurately. This analysis aids in identifying areas                                    for model improvement and fine-tuning.
 
 ## Results
+
+A few stat graphs visualized in TensorBoard:
+
+### Accuracy
+![Accuracy](https://github.com/mrkrisgee/FoodVision/blob/main/results/Accuracy.png)
+
+### Loss
+![Loss](https://github.com/mrkrisgee/FoodVision/blob/main/results/Loss.png)
+
+### Metric Outputs and Total Training Times for Each Model:
+![Metric Outputs](https://github.com/mrkrisgee/FoodVision/blob/main/results/results.png)
+
+The results of FoodVision can be examined in the [`results`](https://github.com/mrkrisgee/FoodVision/tree/main/results) directory.
+
+### Usage
+
+
 
 ## Future work
 
